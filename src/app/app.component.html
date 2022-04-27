@@ -1,0 +1,30 @@
+<div class="container text-center my-3">
+  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input (click)="changePowerToxHidden()" type="radio" class="btn-check" name="btnradio" id="powerTox"
+      autocomplete="off" checked>
+    <label class="btn btn-outline-primary" for="powerTox">Custom Pipe powerTox</label>
+
+    <input (click)="changeStringConvertHidden()" type="radio" class="btn-check" name="btnradio" id="stringConvert"
+      autocomplete="off">
+    <label class="btn btn-outline-secondary" for="stringConvert">Custom Pipe stringConvert</label>
+
+    <input (click)="changeSpliceArrayHidden()" type="radio" class="btn-check" name="btnradio" id="spliceArray"
+      autocomplete="off">
+    <label class="btn btn-outline-success" for="spliceArray">Array Splice Pipe</label>
+
+    <input (click)="changeHighLightHidden()" type="radio" class="btn-check" name="btnradio" id="highLight"
+      autocomplete="off">
+    <label class="btn btn-outline-danger" for="highLight">High Light</label>
+
+    <input (click)="changeProductListHidden()" type="radio" class="btn-check" name="btnradio" id="productList"
+      autocomplete="off">
+    <label class="btn btn-outline-dark" for="productList">Product List</label>
+  </div>
+
+
+  <app-power-tox [hidden]="isPowerToxHidden"></app-power-tox>
+  <app-string-convert [hidden]="isStringConvertHidden"></app-string-convert>
+  <app-splice-array [hidden]="isSpliceArrayHidden"></app-splice-array>
+  <app-high-light [hidden]="isHighLightHidden"></app-high-light>
+  <app-product-list [hidden]="isProductListHidden"></app-product-list>
+</div>

@@ -1,0 +1,73 @@
+<hr>
+<div class="container my-5">
+  <table class="table table-striped table-hover text-center align-middle">
+    <thead>
+      <tr>
+        <th>Number</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Available</th>
+        <th>Price</th>
+        <th>Rating</th>
+        <th>Image
+          <button (click)="changeImageHidden()" class="btn btn-warning m-1">Show | Hidden</button>
+        </th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of productListList; let number=index">
+        <td>{{number}}</td>
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.code|stringConvert}}</td>
+        <td>{{item.available|date}}</td>
+        <td>{{item.price|currency}}</td>
+        <td>
+          <app-star [rating]="item.rating"></app-star>
+        </td>
+        <td><img [hidden]="isimageHidden" style="width: 150px;height: 150px;" src="{{item.image}}" alt=""></td>
+        <td>
+          <button (click)="showData(item.id)" class="btn btn-primary m-1">update</button>
+          <button (click)="deleteDept(item.id)" class="btn btn-danger m-1">delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table [hidden]="isHidden" class="table table-dark table-borderless text-center">
+    <thead>
+      <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>code</td>
+        <td>available</td>
+      </tr>
+      <tr>
+        <td><input disabled class="text-center" type="text" [value]="newProductList.id"></td>
+        <td><input #name class="text-center" type="text" [value]="newProductList.name"></td>
+        <td><input #code class="text-center" type="text" [value]="newProductList.code"></td>
+        <td><input #available class="text-center" type="datetime" [value]="newProductList.available"></td>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>price</td>
+        <td>rating</td>
+        <td>image</td>
+        <td>Save</td>
+      </tr>
+      <tr>
+        <td><input #price class="text-center" type="number" [value]="newProductList.price"></td>
+        <td><input #rating class="text-center" type="number" [value]="newProductList.rating"></td>
+        <td><input #image class="text-center" type="url" [value]="newProductList.image"></td>
+        <td>
+          <button (click)="updateDept(name.value,code.value,available.value,price.value,rating.value,image.value)"
+            class="btn btn-success m-1">update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
