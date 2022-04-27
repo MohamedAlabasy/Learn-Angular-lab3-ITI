@@ -1,27 +1,17 @@
 # Lab3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## To run this lab : 
+```
+npm install
+```
+```
+ng serve -o
+```
+![image](https://user-images.githubusercontent.com/93389016/165536864-27adf1c3-f5be-4c6d-a93b-87efdff143ef.png)
+![image](https://user-images.githubusercontent.com/93389016/165536973-eea74737-43e4-4df9-992b-0536f9aa70df.png)
+![image](https://user-images.githubusercontent.com/93389016/165537587-cf319176-5677-4849-b2be-43f0b4bef21f.png)
+![image](https://user-images.githubusercontent.com/93389016/165537828-14b73073-9d64-48e8-b8ae-f44164345aee.png)
+![image](https://user-images.githubusercontent.com/93389016/165537885-584e45ae-ac0d-435f-9afa-b7c42fea5bc2.png)
+![image](https://user-images.githubusercontent.com/93389016/165537916-d6c9d9c9-a9d8-479b-8f98-d9e741a5d25a.png)
+![image](https://user-images.githubusercontent.com/93389016/165538034-f912fb72-7712-4e00-a5dd-3338e5f18747.png)
+![image](https://user-images.githubusercontent.com/93389016/165538114-7ce383a5-2df2-45d4-b3ba-b45562f09a5b.png)
